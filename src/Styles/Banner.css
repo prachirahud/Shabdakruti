@@ -1,0 +1,64 @@
+.banner-carousel {
+  width: 100%;
+  max-width: 1800px;
+  margin: auto;
+  /* background: linear-gradient(to right, #24a7cf, #731b8e); */
+
+}
+.banner {
+  width: 100%;            /* or a fixed value like 1200px */
+  height: 200px;          /* fixed height for rectangular shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0;       /* to ensure rectangle shape */
+  overflow: hidden; 
+   margin-top: 180px;
+}
+
+
+
+
+.banner-slide {
+  width: 100%;       /* full container width */
+  aspect-ratio: 2 / 1; /* modern way to maintain 2:1 ratio */
+  overflow: hidden;
+}
+
+.banner-image {
+  margin: 280px 10px 10px 10px; /* top right bottom left */
+  width: 100%;
+  height: 100%;
+ object-fit: contain; 
+  display: block;
+}
+
+/* Arrows */
+.custom-arrow {
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.custom-arrow.prev {
+    top: 40%;
+  left: 10px;
+  position:fixed;
+    z-index: 2;
+}
+
+.custom-arrow.next {
+      top: 40%;
+  right: 10px;
+    position:fixed;
+    z-index: 2;
+    cursor: pointer;
+}
