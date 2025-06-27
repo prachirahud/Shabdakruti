@@ -9,6 +9,7 @@ import product7 from '../Assets/bags.jpg';
 import product8 from '../Assets/banner.jpg';
 import BannerCarousel from './BannerCarousel';
 import '../Styles/Home.css'; // Link your CSS file
+import '../Styles/Products.css'; // Link your CSS file for product styles
 function Home() {
   const products = [
       { id: 1, title: 'Product 1', description: 'Awards and Certificates', image: product1 },
@@ -29,8 +30,9 @@ function Home() {
  
       <div className="products-container" >
          <BannerCarousel />
+          <div className='h2'>All Products</div>
       <div className="products-row">
-        
+       
         {firstRow.map((prod) => (
           <div className="product-card" key={prod.id}>
             <img src={prod.image} alt={prod.title} className="product-image" />

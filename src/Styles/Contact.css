@@ -1,4 +1,114 @@
-.contact-info {
+.contact-container {
+  max-width: 1200px;
+  margin: 180px auto 50px auto; /* adjust top margin if navbar is fixed */
+  padding: 10px;
+  border-radius: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* box-shadow: 0 18px 20px rgba(3, 63, 141, 0.1); */
+}
+
+.form-section h2 {
+  text-align: center;
+  color: goldenrod;
+  margin: 10px;
+}
+
+.form-section p {
+  text-align: center;
+  color: #0a0000;
+  font-size: 20px;
+  margin-bottom: 50px;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto; /* ← centers it horizontally */
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #eaf0f0;
+  box-shadow: #9defe8 0px 0px 10px 0px;
+  margin-bottom: 100px; /* space between form and footer */
+}
+
+
+form label {
+  font-weight: 600;
+  color: #6b0251;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form textarea {
+  resize: vertical;
+}
+
+form button {
+  padding: 15px;
+  background: linear-gradient(to right, #24a7cf, #731b8e);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  max-width: 300px;
+    align-self: center;
+
+}
+
+form button:hover {
+  background-color: #e68900;
+}
+.info-section{
+  margin: 10px auto;
+  padding: 20px;
+max-width: 1600px;
+  background-color: #f0f8ff;
+  
+}
+h3 {
+  margin-top: 40px;
+  color: #b49708;
+  margin-left: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+ul li {
+  padding: 8px 0;
+  font-size: 18px;
+  color: #444;
+}
+
+ul li a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* .contact-info {
   background: #f7f7f7;
   padding: 20px;
   border-radius: 12px;
@@ -7,7 +117,14 @@
   font-family: sans-serif;
   line-height: 1.8;
 }
-
+.contact-header {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  font-weight: bold;
+  margin-top: 180px;
+  margin-bottom: 20px;
+}
 .contact-info h2 {
   text-align: center;
   color: #7c1641;
@@ -28,4 +145,4 @@
 }
 .contact-info a:hover {
   text-decoration: underline;
-}
+} */

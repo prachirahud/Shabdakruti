@@ -41,6 +41,8 @@ function Products() {
 
   return (
     <div className="products-container">
+      <h2>Our Products</h2>
+      <p>Explore our wide range of customized products designed to meet your needs.</p>
       <div className="products-row">
         {firstRow.map((prod) => (
           <div className="product-card" key={prod.id}>

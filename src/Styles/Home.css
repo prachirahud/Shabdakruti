@@ -6,9 +6,20 @@
   flex-wrap: nowrap;
   overflow-x: auto;
 }
+.h2{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: rgb(153, 111, 5);
+  font-size: 30px;
+  margin-top: 150px;
+  margin-bottom: 5px;
 
+}
 .product-card {
   flex: 1;
+  margin-top: auto;
   max-width: 18%;
   min-width: 160px;
   background: #f9f9f9;
