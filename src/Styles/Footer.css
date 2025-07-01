@@ -16,12 +16,15 @@
 .footer-section h4 {
   margin-bottom: 10px;
   color: #47020b;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .footer-section p {
-  margin: 5px 0;
+  margin: 5px ;
   font-size:16px;
   color: #0c1591;
+text-align: left;
 }
 
 /* .social-icons a {
@@ -35,7 +38,7 @@
   color: #ffad05;
 } */
 .social-icons a {
-  font-size: 22px;
+  font-size: 30px;
   margin-right: 15px;
   transition: transform 0.3s ease;
 }

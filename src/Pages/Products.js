@@ -15,7 +15,6 @@ import KeyChain from '../Assets/Pkeychain.jpg';
 import Card from '../Assets/pvisitingcard.jpg';
 import Diary from '../Assets/pschooldiary.jpg';
 import BillBook from '../Assets/billbook.jpg';
-
 function Products() {
   const products = [
     { id: 1, title: 'Mug', description: 'Customize Mug', image: Mug },
@@ -35,9 +34,10 @@ function Products() {
     { id: 15, title: 'Bill Book', description: 'Bill Book', image: BillBook }
   ];
 
-    const firstRow = products.slice(0,5);
-  const secondRow = products.slice(5, 10);
-  const thirdRow = products.slice(10, 15);
+    const firstRow = products.slice(0,4);
+  const secondRow = products.slice(4, 8);
+  const thirdRow = products.slice(8, 12);
+  const fourthRow = products.slice(12, 16);
 
   return (
     <div className="products-container">
@@ -65,6 +65,15 @@ function Products() {
 
       <div className="products-row">
         {thirdRow.map((prod) => (
+          <div className="product-card" key={prod.id}>
+            <img src={prod.image} alt={prod.title} className="product-image" />
+            <h4>{prod.title}</h4>
+            <p>{prod.description}</p>
+          </div>
+        ))}
+      </div>
+         <div className="products-row">
+        {fourthRow.map((prod) => (
           <div className="product-card" key={prod.id}>
             <img src={prod.image} alt={prod.title} className="product-image" />
             <h4>{prod.title}</h4>

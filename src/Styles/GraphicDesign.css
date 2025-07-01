@@ -1,0 +1,83 @@
+/* design.css */
+
+/* Base Styles */
+.design-container {
+  max-width: 1000px;
+  margin-top: 200px; /* Adjusted for fixed navbar */
+  padding: 100px 20px 30px 20px; /* Top padding accounts for fixed navbar */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive for Tablets */
+@media (max-width: 768px) {
+  .design-container {
+    padding: 80px 15px 20px 15px; /* Reduced top padding for smaller navbar space */
+  }
+
+  h1, h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  ul li {
+    font-size: 15px;
+  }
+}
+
+/* Responsive for Mobile */
+@media (max-width: 480px) {
+  .design-container {
+    padding: 70px 10px 15px 10px;
+  }
+
+  h1, h2 {
+    font-size: 20px;
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+}
+
+
+/* .design-container {
+  max-width: 1000px;
+  margin-top: 180px;
+  padding: 30px;
+  font-family: sans-serif;
+}
+
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+} */

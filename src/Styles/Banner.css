@@ -2,17 +2,103 @@
   width: 100%;
   max-width: 1800px;
   margin: auto;
-  /* background: linear-gradient(to right, #24a7cf, #731b8e); */
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+
+/* Slide Container */
+.banner-slide {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2 / 1; /* maintains rectangle shape */
+  overflow: hidden;
+}
+
+/* Banner Image */
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Arrows */
+.custom-arrow {
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  cursor: pointer;
+}
+
+.custom-arrow.prev {
+  left: 15px;
+}
+
+.custom-arrow.next {
+  right: 15px;
+}
+
+/* Dots */
+.slick-dots li button:before {
+  color: #fff;
+  font-size: 12px;
+}
+.slick-dots li.slick-active button:before {
+  color: #ffcc00;
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+  .banner-carousel {
+    padding-top: 60px;
+  }
+
+  .custom-arrow {
+    font-size: 1.5rem;
+    padding: 6px 10px;
+  }
+
+  .banner-slide {
+    aspect-ratio: 16 / 9;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-carousel {
+    padding-top: 40px;
+  }
+
+  .custom-arrow {
+    display: none; /* hide arrows on very small devices */
+  }
+
+  .banner-slide {
+    aspect-ratio: 4 / 3;
+  }
+}
+
+
+/* .banner-carousel {
+  width: 100%;
+  max-width: 1800px;
+  margin: auto;
 
 }
 .banner {
-  width: 100%;            /* or a fixed value like 1200px */
-  height: 200px;          /* fixed height for rectangular shape */
+  width: 100%;            
+  height: 200px;         
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 0;       /* to ensure rectangle shape */
+  border-radius: 0;       
   overflow: hidden; 
    margin-top: 180px;
 }
@@ -21,20 +107,19 @@
 
 
 .banner-slide {
-  width: 100%;       /* full container width */
-  aspect-ratio: 2 / 1; /* modern way to maintain 2:1 ratio */
+  width: 100%;       
+  aspect-ratio: 2 / 1; 
   overflow: hidden;
 }
 
 .banner-image {
-  margin: 280px 10px 10px 10px; /* top right bottom left */
+  margin: 280px 10px 10px 10px; 
   width: 100%;
   height: 100%;
  object-fit: contain; 
   display: block;
 }
 
-/* Arrows */
 .custom-arrow {
   font-size: 2rem;
   background: rgba(0, 0, 0, 0.5);
@@ -61,4 +146,4 @@
     position:fixed;
     z-index: 2;
     cursor: pointer;
-}
+} */

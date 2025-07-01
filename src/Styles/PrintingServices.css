@@ -1,0 +1,177 @@
+.printing-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  font-family: sans-serif;
+    margin-top: 220px; /* Adjusted for the top margin */
+}
+
+h1, h2 {
+  color: #cb9a08;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th {
+  background-color: #2c0119;
+  color: #f9f8f6;
+  padding: 12px;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #78a204;
+  padding: 12px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Mobile: Up to 599px */
+@media (max-width: 599px) {
+  .printing-container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  ul {
+    padding-left: 15px;
+    font-size: 14px;
+  }
+}
+
+/* Tablets: 600px - 991px */
+@media (min-width: 600px) and (max-width: 991px) {
+  .printing-container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  ul {
+    font-size: 15px;
+  }
+}
+
+/* iPad Pro Landscape & Laptops: 992px - 1366px */
+@media (min-width: 992px) and (max-width: 1366px) {
+  .printing-container {
+    padding: 30px 40px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 16px;
+  }
+
+  ul {
+    font-size: 16px;
+  }
+}
+
+/* Large Desktops: 1367px and above */
+@media (min-width: 1367px) {
+  .printing-container {
+    padding: 40px 60px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  table,
+  th,
+  td {
+    font-size: 17px;
+  }
+
+  ul {
+    font-size: 17px;
+  }
+}
+
+
+/* .printing-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 30px;
+  font-family: sans-serif;
+}
+
+h1, h2 {
+  color: #cb9a08;
+  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th{
+    background-color: #2c0119;
+    color: #f9f8f6;
+    padding: 12px;
+    text-align: left;
+
+}
+th, td {
+  border: 1px solid #78a204;
+  padding: 12px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+} */
